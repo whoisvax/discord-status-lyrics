@@ -26,11 +26,13 @@ async function fetchLyrics(track, artist) {
     }
 }
 
-function getCurrentLyric(lyrics, progress) {
+function getCurrentLyric(lyrics, progress, delay = -1000) {
     if (!lyrics) return null;
+    const adjustedProgress = progress - delay;
+    
     for (let i = 0; i < lyrics.length; i++) {
-        if (progress >= lyrics[i].startTime && 
-            (!lyrics[i + 1] || progress < lyrics[i + 1].startTime)) {
+        if (adjustedProgress >= lyrics[i].startTime && 
+            (!lyrics[i + 1] || adjustedProgress < lyrics[i + 1].startTime)) {
             return lyrics[i].text;
         }
     }
