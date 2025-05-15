@@ -52,13 +52,14 @@ window.webpackChunkdiscord_app.push([
   },
 ]);
 window.webpackChunkdiscord_app.pop();
-console.log('%cWorked!', 'font-size: 50px');
 console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
 ```
 
 ## What are the limitations?
 - The app short-circuits if the lyrics fetcher hits a 404 (song not available) **this is a very minor problem that i am truly too lazy to fix**
 - You can't see your own status changing, the prespective from your client is different from every other.
+- Your Spotify rich presence has to be visible.
+- The user and the bot need to share a guild (a private one works).
 
 ### I need help/I found a bug/I would like to talk with you.
 - Contact me at **@phobiaphobiaphobia** or **@larpeiro** on Discord.
