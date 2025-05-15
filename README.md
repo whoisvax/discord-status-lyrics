@@ -16,8 +16,6 @@
     1. every 3 seconds: fetch a user's rich presence, to check if listening to Spotify.
 2. If listening to Spotify, fetch the synced song's lyrics with [this API](https://lrclib.net/docs).
 3. Automatically adjust the user's status [via this library](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) based on the synced lyrics to the song.
-    1. Item 3a
-    2. Item 3b
 
 ## How to set up?
 
